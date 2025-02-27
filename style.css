@@ -1,0 +1,413 @@
+html,
+body {
+	scroll-behavior: smooth;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 35px;
+	color: initial;
+}
+.is_full_bleed {
+	padding: 0;
+	max-width: inherit;
+}
+
+.index_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	background-image: url("./img/img_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0 150px;
+}
+
+.index_col_1,
+.index_col_2 {
+	text-align: center;
+	align-self: center;
+	width: 100%;
+}
+
+.col_1_wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.main_name {
+	color: white;
+	font-size: 150px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.name_status {
+	color: white;
+	font-size: 30px;
+	letter-spacing: 13px;
+	padding-top: 35px;
+}
+
+.img_fermin {
+	height: 700px;
+	border-radius: 15px;
+}
+
+.stats_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 15px;
+	background-color: black;
+	padding: 150px 0 90px;
+}
+.stats_col_1 {
+	text-align: center;
+	align-self: center;
+}
+.stats_col_2 {
+	text-align: center;
+	align-self: center;
+}
+.stats_col_3 {
+	text-align: center;
+	align-self: center;
+}
+.stats_title_container {
+	background-image: url("./img/img_texture.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px 0px 10px 30px;
+}
+.stats_title {
+	color: white;
+	font-size: 35px;
+	letter-spacing: 2px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.img_stats {
+	height: 550px;
+	border-radius: 15px;
+	filter: grayscale(100%) contrast(107%);
+}
+
+.stats {
+	color: white;
+	letter-spacing: 2px;
+	padding: 27px 0;
+}
+
+.bio_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	background-image: url("./img/img_background_bio.jpg");
+	background-repeat: repeat;
+	padding: 105px 0;
+}
+.bio_col_1 {
+	text-align: center;
+	align-self: center;
+}
+.bio_col_2 {
+	text-align: center;
+}
+
+.bio_text {
+	color: white;
+	font-size: 40px;
+	padding: 100px;
+}
+
+.bio_video {
+	height: 600px;
+	border-radius: 20px;
+}
+
+.contact_section {
+	background-image: url("./img/img_corona.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 20% 50%;
+}
+
+.contact_title {
+	font-size: 85px;
+	color: white;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: end;
+	padding-top: 40px;
+	padding-right: 40px;
+}
+
+.contact_info_wrapper {
+	padding: 400px 0 20px;
+}
+
+.contact_info {
+	color: white;
+	padding-bottom: 100px;
+	padding-left: 50px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+	.main_name {
+		font-size: 60px; /* Further adjust font size for smaller devices */
+	}
+
+	.name_status {
+		font-size: 18px; /* Further adjust font size for smaller devices */
+	}
+	.index_section {
+		display: flex; /* Cambiar a flexbox para un diseño de columna */
+		flex-direction: column; /* Apilar elementos en una columna */
+		padding: 20px 20px 150px 20px; /* Agregar padding para evitar overflow */
+	}
+
+	.index_col_1 {
+		text-align: center; /* Centrar el texto en la columna */
+		margin-bottom: 20px; /* Espacio entre columnas */
+	}
+
+	.index_col_2 {
+		text-align: center; /* Centrar el texto en la columna */
+		margin-bottom: 20px; /* Espacio entre columnas */
+	}
+
+	.img_fermin {
+		height: auto; /* Mantener la proporción de la imagen */
+		max-width: 100%; /* Asegurar que la imagen no desborde */
+		border-radius: 10px; /* Ajustar el radio de borde */
+	}
+
+	.stats_title_container {
+		width: 100%; /* Asegurarse de que el contenedor use el ancho completo */
+		text-align: center; /* Centrar el texto */
+		padding: 10px 0px 10px 0px; /* Ajustar el relleno para dispositivos móviles */
+	}
+	.stats_title {
+		font-size: 18px; /* Reduce font size to avoid overflow */
+		padding: 5px; /* Reduce padding to avoid overflow */
+		text-align: center; /* Center text for small devices */
+	}
+	.stats_grid {
+		grid-template-columns: 1fr; /* One column layout for mobile */
+		padding-top: 80px;
+		padding-bottom: 150px;
+	}
+
+	.img_stats {
+		height: auto; /* Maintain aspect ratio */
+		max-width: 80%; /* Ensure image does not overflow, adjusted to 80% */
+		border-radius: 10px; /* Adjust border radius */
+		margin: 0 auto; /* Center the image */
+	}
+
+	.stats {
+		font-size: 20px; /* Adjust font size for smaller devices */
+	}
+
+	.bio_grid {
+		grid-template-columns: 1fr; /* One column layout for mobile */
+		gap: 20px; /* Add some space between items */
+		padding: 60px 20px 100px 20px; /* Adjust padding for mobile */
+	}
+	.bio_col_1,
+	.bio_col_2 {
+		text-align: center; /* Center text in both columns */
+	}
+	.bio_text {
+		padding: 0px 0px 25px 0px;
+	}
+	.bio_video {
+		height: 700px;
+	}
+	.contact_title {
+		font-size: 50px;
+		padding-right: 0px;
+	}
+	.contact_info {
+		padding-left: 15px; /* Remove left padding for mobile */
+		text-align: justify; /* Center text for mobile */
+	}
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.index_section {
+		grid-template-columns: 1fr; /* One column layout for mobile */
+		padding: 50px 0px 150px 0px;
+	}
+	.index_col_1 {
+		text-align: center; /* Centrar el texto en la columna */
+		margin-bottom: 20px; /* Espacio entre columnas */
+	}
+
+	.index_col_2 {
+		text-align: center; /* Centrar el texto en la columna */
+		margin-bottom: 20px; /* Espacio entre columnas */
+	}
+
+	.main_name {
+		font-size: 80px; /* Smaller font size for mobile */
+	}
+
+	.name_status {
+		font-size: 20px; /* Smaller font size for mobile */
+		letter-spacing: 5px;
+	}
+
+	.img_fermin {
+		height: 700px; /* Adjust image height for mobile */
+	}
+
+	.stats_grid {
+		grid-template-columns: 1fr; /* One column layout for mobile */
+		padding: 50px 0px 150px 0px;
+	}
+	.stats_title {
+		font-size: 20px; /* Adjust font size for tablet */
+		padding: 15px; /* Adjust padding for tablet */
+		text-align: center; /* Center text for tablet */
+	}
+	.stats {
+		font-size: 20px; /* Adjust font size for smaller devices */
+	}
+	.bio_grid {
+		display: flex; /* Change to flex for column layout */
+		flex-direction: column; /* Stack items in a column */
+		gap: 20px; /* Add some space between items */
+		padding: 80px 0px 80px 0px; /* Adjust padding for mobile */
+	}
+
+	.bio_col_1,
+	.bio_col_2 {
+		text-align: center; /* Center text in both columns */
+	}
+
+	.bio_text {
+		font-size: 30px; /* Smaller font size for mobile */
+		padding: 50px;
+	}
+	.bio_video {
+		height: 700px;
+	}
+
+	.contact_title {
+		font-size: 50px; /* Smaller font size for mobile */
+		text-align: right;
+		padding: 5px 30px 0px 0px;
+	}
+
+	.contact_info_wrapper {
+		padding: 100px 0 20px; /* Less padding for mobile */
+	}
+
+	.contact_info {
+		padding-left: 15px; /* Remove left padding for mobile */
+		text-align: justify; /* Center text for mobile */
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 970px) {
+	.index_section {
+		grid-template-columns: 1fr; /* One column layout for mobile */
+		padding: 50px 0px 150px 0px;
+	}
+	.index_col_1 {
+		text-align: center; /* Centrar el texto en la columna */
+		margin-bottom: 20px; /* Espacio entre columnas */
+	}
+
+	.index_col_2 {
+		text-align: center; /* Centrar el texto en la columna */
+		margin-bottom: 20px; /* Espacio entre columnas */
+	}
+
+	.main_name {
+		font-size: 100px; /* Adjust font size for tablet */
+	}
+
+	.name_status {
+		font-size: 25px; /* Adjust font size for tablet */
+		letter-spacing: 10px;
+	}
+
+	.img_fermin {
+		height: 600px; /* Adjust image height for tablet */
+	}
+
+	.stats_grid {
+		grid-template-columns: 1fr; /* One column layout for mobile */
+	}
+	.stats_title {
+		font-size: 25px; /* Adjust font size for mobile */
+		padding: 10px; /* Adjust padding for mobile */
+		text-align: center; /* Center text for mobile */
+	}
+	.stats {
+		font-size: 17px; /* Adjust font size for smaller devices */
+	}
+	.bio_grid {
+		display: flex; /* Change to flex for column layout */
+		flex-direction: column; /* Stack items in a column */
+		gap: 10px; /* Add some space between items */
+		padding: 50px 20px; /* Adjust padding for mobile */
+	}
+
+	.bio_col_1,
+	.bio_col_2 {
+		text-align: center; /* Center text in both columns */
+	}
+
+	.bio_text {
+		font-size: 35px; /* Adjust font size for tablet */
+		padding: 80px;
+	}
+
+	.contact_title {
+		font-size: 70px; /* Adjust font size for tablet */
+	}
+
+	.contact_info_wrapper {
+		padding: 200px 0 20px; /* Less padding for tablet */
+	}
+}
+@media only screen and (min-width: 971px) {
+	.index_section {
+		grid-template-columns: 1fr 1fr; /* One column layout for mobile */
+		padding: 50px 15px 150px 15px;
+	}
+	.index_col_1 {
+		text-align: center; /* Centrar el texto en la columna */
+	}
+
+	.index_col_2 {
+		text-align: center; /* Centrar el texto en la columna */
+	}
+	.main_name {
+		font-size: 100px; /* Adjust font size for tablet */
+	}
+	.name_status {
+		font-size: 25px; /* Adjust font size for tablet */
+		letter-spacing: 10px;
+	}
+	.stats_section {
+		padding: 5px;
+	}
+}

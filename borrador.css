@@ -1,0 +1,167 @@
+html body {
+	scroll-behavior: smooth;
+	background-color: peru;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 35px;
+	color: initial;
+}
+.is_full_bleed {
+	padding: 0px;
+	max-width: inherit;
+}
+.index_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	background-image: url("./img/img_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px 150px 0px;
+}
+.index_col_1 {
+	text-align: center;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+.index_col_2 {
+	text-align: center;
+	align-self: center;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+.col_1_wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.main_name {
+	color: white;
+	font-size: 150px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.name_status {
+	color: white;
+	font-size: 30px;
+	letter-spacing: 13px;
+	padding-top: 35px;
+}
+.img_fermin {
+	height: 700px;
+	border-radius: 15px;
+}
+.stats_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 15px;
+	background-color: black;
+	padding: 150px 0px 90px 0px;
+	max-width: inherit;
+}
+.stats_col_1 {
+	text-align: center;
+	align-self: center;
+}
+.stats_col_2 {
+	text-align: center;
+	align-self: center;
+}
+.stats_col_3 {
+	text-align: center;
+	align-self: center;
+}
+.stats_title_container {
+	background-image: url("./img/img_texture.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	padding: 10px 0px 10px 30px;
+}
+.stats_title {
+	color: white;
+	font-size: 35px;
+	letter-spacing: 2px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.img_stats {
+	height: 550px;
+	border-radius: 15px;
+	filter: grayscale(100%) contrast(107%);
+}
+.stats {
+	color: white;
+	letter-spacing: 2px;
+	padding: 27px 0px 27px 0px;
+}
+
+.bio_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	background-image: url("./img/img_background_bio.jpg");
+	background-repeat: repeat;
+	max-width: inherit;
+	padding: 105px 0px 105px 0px;
+}
+.bio_col_1 {
+	text-align: center;
+	align-self: center;
+}
+.bio_col_2 {
+	text-align: center;
+}
+.bio_text {
+	color: white;
+	font-size: 40px;
+	padding: 100px 100px 100px 100px;
+}
+.bio_video {
+	height: 600px;
+	border-radius: 20px;
+}
+
+.contact_section {
+	background-image: url("./img/img_corona.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 20% 50%;
+}
+.contact_title {
+	font-size: 85px;
+	color: white;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: end;
+	padding-top: 40px;
+	padding-right: 40px;
+}
+.contact_info_wrapper {
+	padding: 400px 0px 20px 0px;
+}
+.contact_info {
+	color: white;
+	padding-bottom: 100px;
+	padding-left: 50px;
+}
