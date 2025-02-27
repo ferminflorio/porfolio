@@ -116,6 +116,7 @@ body {
 	gap: 50px;
 	background-image: url("./img/img_background_bio.jpg");
 	background-repeat: repeat;
+	background-position: 20% 99%;
 	padding: 105px 0;
 }
 .bio_col_1 {
@@ -164,6 +165,9 @@ body {
 	color: white;
 	padding-bottom: 100px;
 	padding-left: 50px;
+}
+.phone {
+	text-decoration: none;
 }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
