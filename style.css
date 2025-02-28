@@ -26,10 +26,11 @@ body {
 .index_section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 50px;
+	gap: 0px;
 	background-image: url("./img/img_bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 20% 99%;
 	padding: 100px 0 150px;
 }
 
@@ -65,16 +66,61 @@ body {
 	height: 700px;
 	border-radius: 15px;
 }
-
+.about_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 50px;
+	background-image: url("./img/img_background_3_upsidedown.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 20px 100px 20px;
+}
+.about_col_1 {
+	text-align: end;
+	align-self: flex-start;
+	padding-bottom: 100px;
+}
+.about_col_2 {
+	text-align: start;
+	align-self: flex-end;
+	padding-top: 10px;
+}
+.about_col_3 {
+	text-align: start;
+	align-self: flex-start;
+	padding-right: 120px;
+}
+.about_title {
+	color: white;
+	font-size: 100px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.about_text {
+	color: white;
+	font-size: 20px;
+	padding-top: 50px;
+}
+.img_about_1 {
+	height: 550px;
+	border-radius: 15px;
+	filter: grayscale(100%) contrast(90%) brightness(83%);
+}
+.img_about_2 {
+	height: 550px;
+	border-radius: 10px;
+	filter: grayscale(100%) contrast(90%) brightness(83%);
+}
 .stats_grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 15px;
 	background-color: black;
-	padding: 150px 0 90px;
+	padding: 110px 0px 110px 0px;
 }
 .stats_col_1 {
-	text-align: center;
+	text-align: end;
 	align-self: center;
 }
 .stats_col_2 {
@@ -82,18 +128,16 @@ body {
 	align-self: center;
 }
 .stats_col_3 {
-	text-align: center;
+	text-align: start;
 	align-self: center;
 }
 .stats_title_container {
-	background-image: url("./img/img_texture.JPG");
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 10px 0px 10px 30px;
+	padding: 15px 0px 15px 160px;
 }
 .stats_title {
 	color: white;
 	font-size: 35px;
+	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -116,7 +160,7 @@ body {
 	gap: 50px;
 	background-image: url("./img/img_background_bio.jpg");
 	background-repeat: repeat;
-	background-position: 20% 99%;
+	background-position: 20% 100%;
 	padding: 105px 0;
 }
 .bio_col_1 {
@@ -172,7 +216,7 @@ body {
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
 	.main_name {
-		font-size: 60px; /* Further adjust font size for smaller devices */
+		font-size: 110px; /* Further adjust font size for smaller devices */
 	}
 
 	.name_status {
@@ -181,7 +225,7 @@ body {
 	.index_section {
 		display: flex; /* Cambiar a flexbox para un diseño de columna */
 		flex-direction: column; /* Apilar elementos en una columna */
-		padding: 20px 20px 150px 20px; /* Agregar padding para evitar overflow */
+		padding: 20px 20px 15px 20px; /* Agregar padding para evitar overflow */
 	}
 
 	.index_col_1 {
@@ -199,21 +243,42 @@ body {
 		max-width: 100%; /* Asegurar que la imagen no desborde */
 		border-radius: 10px; /* Ajustar el radio de borde */
 	}
+	.about_grid {
+		display: flex; /* Cambiar a flexbox para un diseño de columna */
+		flex-direction: column; /* Apilar elementos en una columna */
+		gap: 20px; /* Agregar espacio entre elementos */
+		/* Ajustar el relleno para dispositivos móviles */
+	}
+	.about_col_1 {
+		text-align: center; /* Centrar el texto en ambas columnas */
+		align-self: center;
+		padding: 0px;
+	}
+	.about_col_2 {
+		text-align: center; /* Centrar el texto en ambas columnas */
+		align-self: center;
+		padding: 0px;
+	}
 
 	.stats_title_container {
-		width: 100%; /* Asegurarse de que el contenedor use el ancho completo */
 		text-align: center; /* Centrar el texto */
-		padding: 10px 0px 10px 0px; /* Ajustar el relleno para dispositivos móviles */
+		padding: 50px 0px 10px 0px; /* Ajustar el relleno para dispositivos móviles */
 	}
 	.stats_title {
-		font-size: 18px; /* Reduce font size to avoid overflow */
-		padding: 5px; /* Reduce padding to avoid overflow */
-		text-align: center; /* Center text for small devices */
+		font-size: 25px; /* Reduce font size to avoid overflow */
+		padding-left: 15px; /* Reduce padding to avoid overflow */
+		text-align: justify; /* Center text for small devices */
 	}
 	.stats_grid {
 		grid-template-columns: 1fr; /* One column layout for mobile */
 		padding-top: 80px;
 		padding-bottom: 150px;
+	}
+	.stats_col_1 {
+		text-align: center; /* Center text in both columns */
+	}
+	.stats_col_3 {
+		text-align: center; /* Center text in both columns */
 	}
 
 	.img_stats {
@@ -244,7 +309,7 @@ body {
 	}
 	.contact_title {
 		font-size: 50px;
-		padding-right: 0px;
+		padding-right: 10px;
 	}
 	.contact_info {
 		padding-left: 15px; /* Remove left padding for mobile */
@@ -256,7 +321,7 @@ body {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 	.index_section {
 		grid-template-columns: 1fr; /* One column layout for mobile */
-		padding: 50px 0px 150px 0px;
+		padding: 50px 0px 15px 0px;
 	}
 	.index_col_1 {
 		text-align: center; /* Centrar el texto en la columna */
@@ -269,29 +334,64 @@ body {
 	}
 
 	.main_name {
-		font-size: 80px; /* Smaller font size for mobile */
+		font-size: 135px; /* Smaller font size for mobile */
 	}
 
 	.name_status {
-		font-size: 20px; /* Smaller font size for mobile */
+		font-size: 30px; /* Smaller font size for mobile */
 		letter-spacing: 5px;
 	}
 
 	.img_fermin {
-		height: 700px; /* Adjust image height for mobile */
+		height: 750px; /* Adjust image height for mobile */
+	}
+	.about_grid {
+		display: flex; /* Cambiar a flexbox para un diseño de columna */
+		flex-direction: column; /* Apilar elementos en una columna */
+		gap: 20px; /* Agregar espacio entre elementos */
+		padding: 60px 20px 100px 20px; /* Ajustar el relleno para dispositivos móviles */
+	}
+	.about_col_1 {
+		text-align: center; /* Centrar el texto en ambas columnas */
+		align-self: center;
+		padding: 0px;
+	}
+	.about_col_2 {
+		text-align: center; /* Centrar el texto en ambas columnas */
+		align-self: center;
+		padding: 0px;
+	}
+	.img_about_1 {
+		height: 750px;
+	}
+	.img_about_2 {
+		height: 750px;
 	}
 
+	.stats_title_container {
+		text-align: center; /* Centrar el texto */
+		padding: 50px 0px 10px 0px; /* Ajustar el relleno para dispositivos móviles */
+	}
+	.stats_title {
+		font-size: 30px; /* Adjust font size for tablet */
+		padding: 15px; /* Adjust padding for tablet */
+		text-align: justify; /* Center text for tablet */
+	}
 	.stats_grid {
 		grid-template-columns: 1fr; /* One column layout for mobile */
 		padding: 50px 0px 150px 0px;
 	}
-	.stats_title {
-		font-size: 20px; /* Adjust font size for tablet */
-		padding: 15px; /* Adjust padding for tablet */
-		text-align: center; /* Center text for tablet */
+	.stats_col_1 {
+		text-align: center; /* Center text in both columns */
+	}
+	.stats_col_3 {
+		text-align: center; /* Center text in both columns */
 	}
 	.stats {
 		font-size: 20px; /* Adjust font size for smaller devices */
+	}
+	.img_stats {
+		height: 750px;
 	}
 	.bio_grid {
 		display: flex; /* Change to flex for column layout */
@@ -310,7 +410,7 @@ body {
 		padding: 50px;
 	}
 	.bio_video {
-		height: 700px;
+		height: 750px;
 	}
 
 	.contact_title {
@@ -332,7 +432,7 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 970px) {
 	.index_section {
 		grid-template-columns: 1fr; /* One column layout for mobile */
-		padding: 50px 0px 150px 0px;
+		padding: 50px 0px 100px 0px;
 	}
 	.index_col_1 {
 		text-align: center; /* Centrar el texto en la columna */
@@ -345,7 +445,7 @@ body {
 	}
 
 	.main_name {
-		font-size: 100px; /* Adjust font size for tablet */
+		font-size: 150px; /* Adjust font size for tablet */
 	}
 
 	.name_status {
@@ -354,19 +454,56 @@ body {
 	}
 
 	.img_fermin {
-		height: 600px; /* Adjust image height for tablet */
+		height: 750px; /* Adjust image height for tablet */
+	}
+	.about_grid {
+		display: flex; /* Cambiar a flexbox para un diseño de columna */
+		flex-direction: column; /* Apilar elementos en una columna */
+		gap: 20px; /* Agregar espacio entre elementos */
+		padding: 60px 20px 100px 20px; /* Ajustar el relleno para dispositivos móviles */
+	}
+	.about_col_1 {
+		text-align: center; /* Centrar el texto en ambas columnas */
+		align-self: center;
+		padding: 0px;
+	}
+	.about_col_2 {
+		text-align: center; /* Centrar el texto en ambas columnas */
+		align-self: center;
+		padding: 0px;
+	}
+	.img_about_1 {
+		height: 750px;
+	}
+	.img_about_2 {
+		height: 750px;
 	}
 
 	.stats_grid {
 		grid-template-columns: 1fr; /* One column layout for mobile */
+		padding-top: 80px;
+		padding-bottom: 150px;
+	}
+	.stats_col_1 {
+		text-align: center; /* Center text in both columns */
+	}
+	.stats_col_3 {
+		text-align: center; /* Center text in both columns */
+	}
+	.stats_title_container {
+		text-align: center; /* Centrar el texto */
+		padding: 50px 0px 10px 0px; /* Ajustar el relleno para dispositivos móviles */
 	}
 	.stats_title {
-		font-size: 25px; /* Adjust font size for mobile */
-		padding: 10px; /* Adjust padding for mobile */
-		text-align: center; /* Center text for mobile */
+		font-size: 30px; /* Adjust font size for tablet */
+		padding: 15px; /* Adjust padding for tablet */
+		text-align: justify; /* Center text for tablet */
 	}
 	.stats {
 		font-size: 17px; /* Adjust font size for smaller devices */
+	}
+	.img_stats {
+		height: 750px;
 	}
 	.bio_grid {
 		display: flex; /* Change to flex for column layout */
@@ -379,7 +516,9 @@ body {
 	.bio_col_2 {
 		text-align: center; /* Center text in both columns */
 	}
-
+	.bio_video {
+		height: 750px;
+	}
 	.bio_text {
 		font-size: 35px; /* Adjust font size for tablet */
 		padding: 80px;
@@ -398,21 +537,16 @@ body {
 		grid-template-columns: 1fr 1fr; /* One column layout for mobile */
 		padding: 50px 15px 150px 15px;
 	}
-	.index_col_1 {
-		text-align: center; /* Centrar el texto en la columna */
-	}
 
 	.index_col_2 {
 		text-align: center; /* Centrar el texto en la columna */
 	}
-	.main_name {
-		font-size: 100px; /* Adjust font size for tablet */
-	}
+
 	.name_status {
 		font-size: 25px; /* Adjust font size for tablet */
 		letter-spacing: 10px;
 	}
 	.stats_section {
-		padding: 5px;
+		padding: 100px 5px 5px 5px;
 	}
 }
