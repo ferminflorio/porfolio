@@ -327,6 +327,9 @@ p {
 		padding-left: 15px; /* Remove left padding for mobile */
 		text-align: justify; /* Center text for mobile */
 	}
+	.contact_section {
+		background-position: 50% 20%;
+	}
 }
 
 /* Media Queries for Responsiveness */
@@ -451,6 +454,9 @@ p {
 	.contact_info {
 		padding-left: 15px; /* Remove left padding for mobile */
 		text-align: justify; /* Center text for mobile */
+	}
+	.contact_section {
+		background-position: 50% 20%;
 	}
 }
 
