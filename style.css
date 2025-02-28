@@ -11,7 +11,10 @@ body {
 	padding: 0;
 	font-family: Arial, sans-serif;
 }
-
+p {
+	padding-top: 40px;
+	line-height: 1.5;
+}
 .container {
 	max-width: 100%;
 	margin: 0 auto;
@@ -100,7 +103,6 @@ body {
 .about_text {
 	color: white;
 	font-size: 20px;
-	padding-top: 50px;
 }
 .img_about_1 {
 	height: 550px;
@@ -245,7 +247,7 @@ body {
 	}
 	.about_grid {
 		display: flex; /* Cambiar a flexbox para un diseño de columna */
-		flex-direction: column; /* Apilar elementos en una columna */
+		flex-direction: column-reverse; /* Apilar elementos en una columna */
 		gap: 20px; /* Agregar espacio entre elementos */
 		/* Ajustar el relleno para dispositivos móviles */
 	}
@@ -258,6 +260,16 @@ body {
 		text-align: center; /* Centrar el texto en ambas columnas */
 		align-self: center;
 		padding: 0px;
+	}
+	.about_col_3 {
+		padding-right: 0px;
+		padding-left: 15px;
+	}
+	.about_text {
+		font-size: 22px;
+	}
+	.about_text_bottom {
+		padding-bottom: 80px;
 	}
 
 	.stats_title_container {
@@ -347,7 +359,7 @@ body {
 	}
 	.about_grid {
 		display: flex; /* Cambiar a flexbox para un diseño de columna */
-		flex-direction: column; /* Apilar elementos en una columna */
+		flex-direction: column-reverse; /* Apilar elementos en una columna */
 		gap: 20px; /* Agregar espacio entre elementos */
 		padding: 60px 20px 100px 20px; /* Ajustar el relleno para dispositivos móviles */
 	}
@@ -360,6 +372,19 @@ body {
 		text-align: center; /* Centrar el texto en ambas columnas */
 		align-self: center;
 		padding: 0px;
+	}
+	.about_col_3 {
+		padding-right: 0px;
+	}
+	.about_col_3 {
+		padding-right: 0px;
+		padding-left: 15px;
+	}
+	.about_text {
+		font-size: 22px;
+	}
+	.about_text_bottom {
+		padding-bottom: 80px;
 	}
 	.img_about_1 {
 		height: 750px;
@@ -458,7 +483,7 @@ body {
 	}
 	.about_grid {
 		display: flex; /* Cambiar a flexbox para un diseño de columna */
-		flex-direction: column; /* Apilar elementos en una columna */
+		flex-direction: column-reverse; /* Apilar elementos en una columna */
 		gap: 20px; /* Agregar espacio entre elementos */
 		padding: 60px 20px 100px 20px; /* Ajustar el relleno para dispositivos móviles */
 	}
@@ -471,6 +496,19 @@ body {
 		text-align: center; /* Centrar el texto en ambas columnas */
 		align-self: center;
 		padding: 0px;
+	}
+	.about_col_3 {
+		padding-right: 0px;
+	}
+	.about_col_3 {
+		padding-right: 0px;
+		padding-left: 15px;
+	}
+	.about_text {
+		font-size: 22px;
+	}
+	.about_text_bottom {
+		padding-bottom: 80px;
 	}
 	.img_about_1 {
 		height: 750px;
