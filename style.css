@@ -216,7 +216,7 @@ body {
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
 	.main_name {
-		font-size: 110px; /* Further adjust font size for smaller devices */
+		font-size: 90px; /* Further adjust font size for smaller devices */
 	}
 
 	.name_status {
