@@ -406,7 +406,7 @@ p {
 	.stats_title {
 		font-size: 30px; /* Adjust font size for tablet */
 		padding: 15px; /* Adjust padding for tablet */
-		text-align: justify; /* Center text for tablet */
+		text-align: center; /* Center text for tablet */
 	}
 	.stats_grid {
 		grid-template-columns: 1fr; /* One column layout for mobile */
