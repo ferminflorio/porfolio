@@ -55,7 +55,7 @@ p {
 	font-size: 150px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	text-shadow: 1px 1px 2px rgb(92, 22, 22), 0 0 1em rgb(41, 41, 104),
+	text-shadow: 1px 1px 1px rgb(92, 22, 22), 0 0 0.1em rgb(41, 41, 104),
 		0 0 0.2em rgb(46, 46, 117);
 }
 
@@ -127,6 +127,8 @@ p {
 	align-self: center;
 }
 .stats_col_2 {
+	display: flex;
+	justify-content: space-around;
 	text-align: center;
 	align-self: center;
 }
