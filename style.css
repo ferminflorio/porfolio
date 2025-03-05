@@ -282,7 +282,7 @@ p {
 	.stats_title {
 		font-size: 25px; /* Reduce font size to avoid overflow */
 		padding-left: 15px; /* Reduce padding to avoid overflow */
-		text-align: justify; /* Center text for small devices */
+		text-align: center; /* Center text for small devices */
 	}
 	.stats_grid {
 		grid-template-columns: 1fr; /* One column layout for mobile */
