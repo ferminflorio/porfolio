@@ -60,6 +60,8 @@ p {
 	font-size: 250px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
+	text-shadow: -1px 0 rgb(63, 43, 43), 0 1px rgb(48, 43, 43),
+		1px 0 rgb(48, 43, 43), 0 -1px rgb(48, 43, 43);
 }
 
 .name_status {
@@ -568,6 +570,17 @@ p {
 		flex-direction: column; /* Stack items in a column */
 		gap: 10px; /* Add some space between items */
 		padding: 50px 20px; /* Adjust padding for mobile */
+	}
+
+	.contact_title {
+		font-size: 120px;
+		color: white;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		text-align: end;
+		padding-top: 40px;
+		padding-right: 40px;
 	}
 
 	.bio_col_1,
