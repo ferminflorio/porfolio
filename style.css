@@ -15,6 +15,7 @@ p {
 	padding-top: 40px;
 	line-height: 1.5;
 }
+
 @font-face {
 	font-family: "bitcrusher";
 	src: url("./fonts/bitcrusher.otf");
@@ -28,6 +29,18 @@ p {
 .is_full_bleed {
 	padding: 0;
 	max-width: inherit;
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1.3s;
+}
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
 }
 
 .index_section {
@@ -116,11 +129,21 @@ p {
 	height: 550px;
 	border-radius: 15px;
 	filter: grayscale(100%) contrast(90%) brightness(83%);
+	cursor: pointer;
+	transition: 150ms ease;
 }
 .img_about_2 {
 	height: 550px;
 	border-radius: 10px;
 	filter: grayscale(100%) contrast(90%) brightness(83%);
+	cursor: pointer;
+	transition: 150ms ease;
+}
+.img_about_1:hover {
+	scale: 1.2;
+}
+.img_about_2:hover {
+	scale: 1.2;
 }
 .stats_grid {
 	display: grid;
@@ -158,6 +181,23 @@ p {
 	height: 550px;
 	border-radius: 15px;
 	filter: grayscale(100%) contrast(107%);
+	cursor: pointer;
+	transition: 150ms ease;
+}
+.img_stats:hover {
+	scale: 1.2;
+}
+.stats_element:nth-child(1) {
+	transition-delay: 200ms;
+}
+.stats_element:nth-child(2) {
+	transition-delay: 300ms;
+}
+.stats_element:nth-child(3) {
+	transition-delay: 400ms;
+}
+.stats_element:nth-child(4) {
+	transition-delay: 500ms;
 }
 
 .stats {
@@ -194,6 +234,12 @@ p {
 .bio_video {
 	height: 700px;
 	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: 105ms ease;
+}
+.bio_video:hover {
+	scale: 1.1;
 }
 
 .contact_section {

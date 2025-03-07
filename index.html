@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="stylesheet" href="style.css" />
+		<script defer src="app.js"></script>
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<main>
+		<main class="view">
 			<div class="index_section container is_full_bleed">
-				<div class="index_col_1">
+				<div class="index_col_1 hidden">
 					<div class="col_1_wrapper">
 						<div class="name_wrapper">
 							<h1 class="main_name">fermin</h1>
@@ -19,7 +20,7 @@
 						<h2 class="name_status">musician actor model</h2>
 					</div>
 				</div>
-				<div class="index_col_2">
+				<div class="index_col_2 hidden">
 					<img
 						class="img_fermin"
 						src="./img/img_fermin.JPG"
@@ -29,21 +30,21 @@
 			</div>
 			<div class="about_section">
 				<div class="about_grid container is_full_bleed">
-					<div class="about_col_1">
+					<div class="about_col_1 hidden">
 						<img
 							class="img_about_1"
 							src="./img/img_madness_1.JPG"
 							alt="img_madness"
 						/>
 					</div>
-					<div class="about_col_2">
+					<div class="about_col_2 hidden">
 						<img
 							class="img_about_2"
 							src="./img/img_madness_2.JPG"
 							alt="img_madness"
 						/>
 					</div>
-					<div class="about_col_3">
+					<div class="about_col_3 hidden">
 						<h2 class="about_title">BIO</h2>
 						<p class="about_text">
 							I am a musician, actor and model. I have been
@@ -64,21 +65,21 @@
 			</div>
 			<div class="stats_section">
 				<div class="stats_title_container">
-					<div class="stats_title">
+					<div class="stats_title hidden show">
 						<h2>stats</h2>
 						<h2>and measurements</h2>
 					</div>
 				</div>
 				<div class="stats_grid container is_full_bleed">
-					<div class="stats_col_1">
+					<div class="stats_col_1 hidden stats_element">
 						<img
 							class="img_stats"
 							src="./img/img_stats_1.jpg"
 							alt="img_stats_1"
 						/>
 					</div>
-					<div class="stats_col_2">
-						<div class="stats_wrapper_1">
+					<div class="stats_col_2 hidden">
+						<div class="stats_wrapper_1 stats_element">
 							<h4 class="stats">height</h4>
 							<h4 class="stats">weight</h4>
 							<h4 class="stats">chest</h4>
@@ -88,7 +89,7 @@
 							<h4 class="stats">eyes</h4>
 							<h4 class="stats">age</h4>
 						</div>
-						<div class="stats_wrapper_2">
+						<div class="stats_wrapper_2 stats_element">
 							<h4 class="stats">1.71</h4>
 							<h4 class="stats">60kg</h4>
 							<h4 class="stats">80</h4>
@@ -99,7 +100,7 @@
 							<h4 class="stats">33</h4>
 						</div>
 					</div>
-					<div class="stats_col_3">
+					<div class="stats_col_3 hidden stats_element">
 						<img
 							class="img_stats"
 							src="./img/img_stats_2.JPG"
@@ -110,12 +111,12 @@
 			</div>
 			<div class="bio_section container is_full_bleed">
 				<div class="bio_grid">
-					<div class="bio_col_1">
+					<div class="bio_col_1 hidden">
 						<h2 class="bio_text">
 							I like to bring my own flair to what I do.
 						</h2>
 					</div>
-					<div class="bio_col_2">
+					<div class="bio_col_2 hidden">
 						<video
 							controls
 							autoplay
@@ -128,10 +129,10 @@
 				</div>
 			</div>
 			<div class="contact_section container is_full_bleed">
-				<div class="contact_title_wrapper">
+				<div class="contact_title_wrapper hidden">
 					<h2 class="contact_title">work with me</h2>
 				</div>
-				<div class="contact_info_wrapper">
+				<div class="contact_info_wrapper hidden">
 					<div class="contact_info">
 						<h2>PHONE</h2>
 						<h3 class="phone">+525539297953</h3>
