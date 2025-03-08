@@ -89,6 +89,7 @@ p {
 .img_fermin {
 	height: 700px;
 	border-radius: 15px;
+	clip-path: polygon(100% 0, 80% 100%, 40% 100%, 0 20%);
 }
 
 .about_grid {
@@ -133,13 +134,53 @@ p {
 	filter: grayscale(100%) contrast(90%) brightness(83%);
 	cursor: pointer;
 	transition: 150ms ease;
+	-webkit-clip-path: polygon(
+		20% 0%,
+		80% 0%,
+		100% 0%,
+		100% 80%,
+		80% 100%,
+		0% 100%,
+		0% 86%,
+		0% 20%
+	);
+	clip-path: polygon(
+		20% 0%,
+		80% 0%,
+		100% 0%,
+		100% 80%,
+		80% 100%,
+		0% 100%,
+		0% 86%,
+		0% 20%
+	);
 }
 .img_about_2 {
 	height: 550px;
-	border-radius: 10px;
+
 	filter: grayscale(100%) contrast(90%) brightness(83%);
 	cursor: pointer;
 	transition: 150ms ease;
+	-webkit-clip-path: polygon(
+		20% 0%,
+		80% 0%,
+		100% 0%,
+		100% 80%,
+		80% 100%,
+		0% 100%,
+		0% 86%,
+		0% 20%
+	);
+	clip-path: polygon(
+		20% 0%,
+		80% 0%,
+		100% 0%,
+		100% 80%,
+		80% 100%,
+		0% 100%,
+		0% 86%,
+		0% 20%
+	);
 }
 .img_about_1:hover {
 	scale: 1.2;
