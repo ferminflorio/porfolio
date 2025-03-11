@@ -34,14 +34,26 @@ p {
 .hidden {
 	opacity: 0;
 	filter: blur(5px);
-	clip-path: insent (0 0 0 0);
+	clip-path: inset (0 0 0 0);
 	transition: all 1.7s;
 }
 
 .show {
 	opacity: 1;
 	filter: blur(0);
-	clip-path: insent (0 0 0 0);
+	clip-path: inset (0 0 0 0);
+	transform: translateX(0%);
+}
+.hidden_2 {
+	opacity: 0;
+	filter: blur(3px);
+	transform: translateX(-100%);
+	transition: all 1.3s;
+}
+.show_2 {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0%);
 }
 
 .index_section {
@@ -157,7 +169,7 @@ p {
 }
 .img_about_2 {
 	height: 550px;
-
+	border-radius: 15px;
 	filter: grayscale(100%) contrast(90%) brightness(83%);
 	cursor: pointer;
 	transition: 150ms ease;
@@ -183,10 +195,10 @@ p {
 	);
 }
 .img_about_1:hover {
-	scale: 1.2;
+	scale: 1.1;
 }
 .img_about_2:hover {
-	scale: 1.2;
+	scale: 1.1;
 }
 
 .stats_grid {
@@ -220,6 +232,18 @@ p {
 	letter-spacing: 2px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+.stats_element:nth-child(1) {
+	transition-delay: 200ms;
+}
+.stats_element:nth-child(2) {
+	transition-delay: 400ms;
+}
+.stats_element:nth-child(3) {
+	transition-delay: 500ms;
+}
+.stats_element:nth-child(4) {
+	transition-delay: 600ms;
+}
 
 .img_stats {
 	height: 550px;
@@ -229,7 +253,7 @@ p {
 	transition: 150ms ease;
 }
 .img_stats:hover {
-	scale: 1.2;
+	scale: 1.1;
 }
 
 .stats {
@@ -270,11 +294,9 @@ p {
 	cursor: pointer;
 	transition: 105ms ease;
 	filter: gray;
-	-webkit-filter: grayscale(100%);
 }
 .bio_video:hover {
 	filter: none;
-	-webkit-filter: grayscale(0%);
 	scale: 1.1;
 }
 
