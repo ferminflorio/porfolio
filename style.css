@@ -55,6 +55,10 @@ p {
 	filter: blur(0);
 	transform: translateX(0%);
 }
+.clickable-img {
+	transition: transform 0.3s ease-in-out;
+	cursor: pointer;
+}
 
 .index_section {
 	display: grid;
@@ -415,7 +419,7 @@ p {
 
 	.img_stats {
 		height: auto; /* Maintain aspect ratio */
-		max-width: 80%; /* Ensure image does not overflow, adjusted to 80% */
+		max-width: 85%; /* Ensure image does not overflow, adjusted to 80% */
 		border-radius: 10px; /* Adjust border radius */
 		margin: 0 auto; /* Center the image */
 	}

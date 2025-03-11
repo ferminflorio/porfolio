@@ -22,16 +22,14 @@ const zoomElements = document.querySelectorAll(".hidden_2");
 zoomElements.forEach((el) => observerTranslate.observe(el));
 
 document.addEventListener("DOMContentLoaded", () => {
-	// Seleccionamos todas las imágenes con la clase "clickable-img"
 	const images = document.querySelectorAll(".clickable-img");
 
 	images.forEach((img) => {
 		img.addEventListener("click", () => {
-			// Verificamos el tamaño actual y alternamos entre grande y original
-			if (img.style.height === "650px") {
-				img.style.height = "550px"; // Tamaño original
+			if (img.style.transform === "scale(1.2)") {
+				img.style.transform = "scale(1)"; // Vuelve al tamaño original
 			} else {
-				img.style.height = "650px"; // Se agranda
+				img.style.transform = "scale(1.2)"; // Se agranda
 			}
 		});
 	});
