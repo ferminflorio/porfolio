@@ -269,12 +269,28 @@ p {
 .img_stats:hover {
 	scale: 1.1;
 }
-
 .stats {
 	color: white;
 	font-size: 18px;
 	letter-spacing: 4px;
 	padding: 27px 0;
+}
+.stats_gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 15px;
+	padding: 110px 0px 110px 0px;
+}
+.gallery_col {
+	text-align: center;
+}
+.img_gallery {
+	height: 550px;
+	border-radius: 15px;
+	transition: 180ms ease;
+}
+.img_gallery:hover {
+	scale: 1.2;
 }
 
 .bio_grid {
