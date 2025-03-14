@@ -18,7 +18,7 @@ p {
 
 @font-face {
 	font-family: "bitcrusher";
-	src: url("./fonts/bitcrusher.otf");
+	src: url("/fonts/bitcrusher.otf");
 }
 .container {
 	max-width: 100%;
@@ -64,7 +64,7 @@ p {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 0px;
-	background-image: url("./img/img_bg.jpg");
+	background-image: url("/img/img_bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 20% 99%;
@@ -112,7 +112,7 @@ p {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 50px;
-	background-image: url("./img/img_background_3_upsidedown.jpg");
+	background-image: url("/img/img_background_3_upsidedown.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px 20px 100px 20px;
@@ -306,7 +306,7 @@ p {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 50px;
-	background-image: url("./img/img_background_bio.jpg");
+	background-image: url("/img/img_background_bio.jpg");
 	background-repeat: repeat;
 	background-position: 20% 100%;
 	padding: 105px 0;
@@ -340,7 +340,7 @@ p {
 }
 
 .contact_section {
-	background-image: url("./img/img_corona.jpg");
+	background-image: url("/img/img_corona.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 20% 50%;
